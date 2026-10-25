@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#241642">
+<title>CostumeCraze | Costume Rentals & Fancy Dress Costumes in Pune</title>
+<meta name="description" content="Discover fancy dress costumes for school functions, parties, festivals and performances. Contact CostumeCraze in Hinjewadi, Pune for costume rentals and sales.">
+<style>
+:root{--ink:#241642;--purple:#6b35b5;--gold:#f8c84b;--cream:#fbf7f0;--muted:#71677c;--green:#16834b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+button,a{ -webkit-tap-highlight-color:transparent}
+button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1160px,92%);margin:auto}
+.topbar{background:var(--ink);color:white;text-align:center;padding:8px;font-size:13px}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #eee}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}
+.logo{font-size:23px;font-weight:900;letter-spacing:-1px;white-space:nowrap}
+.logo span{color:var(--purple)}
+.tagline{display:block;font-size:10px;letter-spacing:2px;color:var(--muted)}
+.links{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:650}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;background:var(--purple);color:white!important;border:0;border-radius:9px;padding:12px 17px;font-weight:750;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:#50258d}
+.btn.gold{background:var(--gold);color:var(--ink)!important}
+.btn.outline{background:white;color:var(--purple)!important;border:1px solid #d9c8ed}
+.hero{background:var(--cream);padding:65px 0 55px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:45px}
+.eyebrow{color:var(--purple);font-size:12px;font-weight:850;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(40px,5.7vw,68px);line-height:1.04;letter-spacing:-2.8px;margin:15px 0 20px}
+h1 span{color:var(--purple)}
+.lead{font-size:17px;color:var(--muted);max-width:540px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+.hero-art{min-height:365px;border-radius:28px;background:linear-gradient(145deg,#e8d9ff,#f8d879 55%,#f6c5a8);padding:25px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:center;transform:rotate(1deg)}
+.art-card{border-radius:19px;background:rgba(255,255,255,.8);min-height:135px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px}
+.art-card:nth-child(2),.art-card:nth-child(3){background:rgba(255,255,255,.57)}
+.art-emoji{font-size:57px;line-height:1.25}
+.art-card strong{font-size:14px;margin-top:8px}
+.trust{border-bottom:1px solid #eee}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;padding:22px 0}
+.trust-item{display:flex;align-items:center;justify-content:center;gap:10px;font-size:13px;font-weight:700}
+.trust-item span{font-size:24px}
+section.content{padding:65px 0}
+.section-head{text-align:center;max-width:650px;margin:0 auto 32px}
+h2{font-size:clamp(28px,4vw,39px);line-height:1.15;letter-spacing:-1px;margin:8px 0 13px}
+.section-head p,.subtext{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+.card{border:1px solid #eee6f4;border-radius:16px;overflow:hidden;background:white;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 35px #24164212}
+.card-art{min-height:170px;display:grid;place-items:center;font-size:76px;background:linear-gradient(135deg,#f1e7ff,#fff4d7)}
+.card:nth-child(3n+2) .card-art{background:linear-gradient(135deg,#ffebdf,#f5e9ff)}
+.card:nth-child(3n) .card-art{background:linear-gradient(135deg,#e2f4e9,#fff0cc)}
+.card-body{padding:20px}
+.card h3{margin:0 0 7px;font-size:19px}
+.card p{margin:0 0 14px;color:var(--muted);font-size:14px}
+.card .btn{padding:10px 13px;font-size:13px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.feature{padding:30px;border-radius:18px;background:#f7f1ff}
+.feature.sale{background:#fff5df}
+.feature .big{font-size:43px}
+.feature h3{font-size:25px;margin:9px 0}
+.feature p{color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{padding:23px;border:1px solid #eee6f4;border-radius:14px}
+.step-num{width:38px;height:38px;background:#efe5ff;color:var(--purple);border-radius:50%;display:grid;place-items:center;font-weight:900}
+.step h3{margin-bottom:5px}
+.step p{color:var(--muted);font-size:14px}
+.banner{padding:40px;border-radius:20px;background:var(--ink);color:white;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.banner h2{max-width:560px}
+.banner p{color:#d7cbe8}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact-box{background:var(--cream);padding:28px;border-radius:16px}
+.contact-line{display:flex;align-items:flex-start;gap:13px;margin:20px 0}
+.contact-icon{font-size:23px}
+.contact-line p{margin:0;color:var(--muted);font-size:14px}
+footer{background:#1b1030;color:white;padding:38px 0 20px}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+footer p,footer small{color:#c9bfd7}
+footer a:not(.btn){color:#f8c84b}
+.foot-bottom{border-top:1px solid #ffffff25;margin-top:25px;padding-top:17px;font-size:12px}
+.float-wa{position:fixed;bottom:20px;right:20px;z-index:10;border-radius:50px;background:#16834b;color:white;padding:13px 18px;font-weight:800;box-shadow:0 5px 20px #0002}
+@media(max-width:780px){
+ .links{gap:12px}.links>a:not(.btn){display:none}
+ .hero{padding:42px 0}.hero-grid{grid-template-columns:1fr;gap:28px}
+ .hero-art{min-height:290px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .steps{grid-template-columns:1fr}.trust-grid{grid-template-columns:1fr;gap:8px}
+ .trust-item{justify-content:flex-start}
+ .banner{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:480px){
+ .logo{font-size:19px}.nav{gap:8px}.nav>.btn{padding:10px;font-size:12px}
+ .hero-art{padding:12px;min-height:240px}.art-card{min-height:110px}.art-emoji{font-size:45px}
+ .grid,.split,.contact-grid,.foot-grid{grid-template-columns:1fr}
+ .card-art{min-height:145px}.content{padding:45px 0!important}
+ .banner{padding:26px}.float-wa{right:12px;bottom:12px}
+ h1{letter-spacing:-1.5px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topbar">Costume Rentals & Sales in Pune · Enquire for your occasion</div>
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#home">COSTUME<span>CRAZE</span><small class="tagline">DRESS UP. STAND OUT.</small></a>
+  <nav class="links" aria-label="Main navigation">
+   <a href="#categories">Costumes</a><a href="#services">Rent or Buy</a><a href="#contact">Contact</a>
+   <a class="btn" href="tel:+919820734011">☎ Call Us</a>
+  </nav>
+ </div>
+</header>
+<main id="home">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow">Rent · Buy · Celebrate</div>
+   <h1>Every celebration deserves <span>a character.</span></h1>
+   <p class="lead">From school fancy dress to unforgettable stage performances, discover costumes that bring your imagination to life.</p>
+   <div class="actions">
+    <a class="btn" href="#categories">Explore Costumes ↗</a>
+    <a class="btn outline" href="https://wa.me/919820734011?text=Hello%20CostumeCraze!%20Please%20share%20your%20costume%20catalogue.">WhatsApp Catalogue</a>
+   </div>
+   <p class="subtext">Tell us the costume, size and event date. We'll help you enquire about the options.</p>
+  </div>
+  <div class="hero-art" aria-label="Illustrated costume categories">
+   <div class="art-card"><span class="art-emoji">🦸</span><strong>Superheroes</strong></div>
+   <div class="art-card"><span class="art-emoji">👑</span><strong>Princesses</strong></div>
+   <div class="art-card"><span class="art-emoji">🎭</span><strong>Stage & Drama</strong></div>
+   <div class="art-card"><span class="art-emoji">🇮🇳</span><strong>Indian Culture</strong></div>
+  </div>
+ </div>
+</section>
+<div class="trust"><div class="wrap trust-grid">
+ <div class="trust-item"><span>🎉</span> Costumes for special occasions</div>
+ <div class="trust-item"><span>👗</span> Rental and purchase enquiries</div>
+ <div class="trust-item"><span>💬</span> Personal assistance on WhatsApp</div>
+</div></div>
+<section class="content" id="categories">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Explore the collection</div>
+   <h2>Find your perfect costume</h2>
+   <p>Discover ideas for school events, parties, cultural celebrations and performances. Ask us about available designs and sizes.</p>
+  </div>
+  <div class="grid">
+   <article class="card"><div class="card-art">🦸</div><div class="card-body"><h3>Superheroes</h3><p>Adventure-inspired looks for costume days and parties.</p><a class="btn" href="https://wa.me/919820734011?text=Hello!%20I%20am%20interested%20in%20superhero%20costumes.%20Please%20share%20options.">Ask about costumes</a></div></article>
+   <article class="card"><div class="card-art">👸</div><div class="card-body"><h3>Princess & Fairy Tales</h3><p>Fairy-tale outfits for celebrations and dress-up events.</p><a class="btn" href="https://wa.me/919820734011?text=Hello!%20Please%20share%20princess%20and%20fairy%20costume%20options.">Ask about costumes</a></div></article>
+   <article class="card"><div class="card-art">🇮🇳</div><div class="card-body"><h3>Indian & Mythology</h3><p>Traditional and mythological character costume enquiries.</p><a class="btn" href="https://wa.me/919820734011?text=Hello!%20I%20am%20looking%20for%20Indian%20traditional%20or%20mythological%20costumes.">Ask about costumes</a></div></article>
+   <article class="card"><div class="card-art">🎓</div><div class="card-body"><h3>School Fancy Dress</h3><p>Ideas for annual days, school competitions and theme days.</p><a class="btn" href="https://wa.me/919820734011?text=Hello!%20I%20need%20a%20school%20fancy%20dress%20costume.%20Please%20help.">Ask about costumes</a></div></article>
+   <article class="card"><div class="card-art">💃</div><div class="card-body"><h3>Dance & Drama</h3><p>Enquire about outfits for stage shows and cultural programmes.</p><a class="btn" href="https://wa.me/919820734011?text=Hello!%20Please%20share%20dance%20and%20drama%20costume%20options.">Ask about costumes</a></div></article>
+   <article class="card"><div class="card-art">🎉</div><div class="card-body"><h3>Parties & Events</h3><p>Costume ideas for themed parties and special occasions.</p><a class="btn" href="https://wa.me/919820734011?text=Hello!%20I%20need%20a%20costume%20for%20a%20party%20or%20event.">Ask about costumes</a></div></article>
+  </div>
+ </div>
+</section>
+<section class="content" id="services" style="background:#faf8fc">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Two ways to dress up</div><h2>Rent for the moment. Buy for the memories.</h2></div>
+  <div class="split">
+   <div class="feature"><div class="big">🧥</div><h3>Costume Rentals</h3><p>Enquire about rental rates, available sizes, event dates, rental periods and return terms. Availability is confirmed personally.</p><a class="btn" href="https://wa.me/919820734011?text=Hello%20CostumeCraze!%20I%20would%20like%20to%20enquire%20about%20renting%20a%20costume.%20My%20event%20date%20is%3A">Enquire to Rent ↗</a></div>
+   <div class="feature sale"><div class="big">🎁</div><h3>Costume Sales</h3><p>Looking for a costume to keep? Ask about designs, sizes, sale prices and purchasing options.</p><a class="btn" href="https://wa.me/919820734011?text=Hello%20CostumeCraze!%20I%20would%20like%20to%20enquire%20about%20buying%20a%20costume.">Enquire to Buy ↗</a></div>
+  </div>
+ </div>
+</section>
+<section class="content">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Simple and personal</div><h2>How to get your costume</h2><p>Our enquiry-first process makes it easy to ask about the right outfit.</p></div>
+  <div class="steps">
+   <div class="step"><div class="step-num">1</div><h3>Choose a style</h3><p>Browse the categories and decide which costume suits your event.</p></div>
+   <div class="step"><div class="step-num">2</div><h3>Send an enquiry</h3><p>Message us with the costume, size, event date and whether you want to rent or buy.</p></div>
+   <div class="step"><div class="step-num">3</div><h3>Confirm the details</h3><p>We'll discuss availability, price and the next steps with you directly.</p></div>
+  </div>
+ </div>
+</section>
+<section class="content"><div class="wrap"><div class="banner">
+ <div><div class="eyebrow" style="color:#f8c84b">Let's find your look</div><h2>Have an event coming up?</h2><p>Tell us what you need and when you need it.</p></div>
+ <a class="btn gold" href="https://wa.me/919820734011?text=Hello%20CostumeCraze!%20I%20need%20help%20choosing%20a%20costume.%20My%20event%20date%20is%3A">Chat on WhatsApp ↗</a>
+ </div></div></section>
+<section class="content" id="contact" style="background:#faf8fc">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">We're here to help</div><h2>Contact CostumeCraze</h2><p>Reach out for costume enquiries, rental details and purchase options.</p></div>
+  <div class="contact-grid">
+   <div class="contact-box">
+    <div class="contact-line"><span class="contact-icon">📞</span><div><strong>Call us</strong><p><a href="tel:+919820734011">9820734011</a></p></div></div>
+    <div class="contact-line"><span class="contact-icon">💬</span><div><strong>WhatsApp</strong><p>Ask about costumes, sizes, prices and availability.</p></div></div>
+    <div class="contact-line"><span class="contact-icon">📍</span><div><strong>Our address</strong><p>Itrend-Homes, Hinjewadi Phase 2,<br>Pune 411057, Maharashtra, India</p></div></div>
+    <a class="btn" href="https://wa.me/919820734011?text=Hello%20CostumeCraze!%20I%20have%20a%20costume%20enquiry.">Message us ↗</a>
+    <a class="btn outline" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Itrend-Homes%2C%20Hinjewadi%20Phase%202%2C%20Pune%20411057">Get Directions ↗</a>
+   </div>
+   <div><h3>Make your next event memorable</h3><p class="subtext">From school fancy dress to themed celebrations, contact us with your requirements. Please confirm the actual costume availability, pricing and rental terms with us before placing an order.</p><p class="subtext">CostumeCraze offers both rental and sale enquiries. Online payments and automatic bookings are not enabled on this version of the website.</p></div>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">
+ <div class="foot-grid"><div><a class="logo" href="#home">COSTUME<span>CRAZE</span></a><p>Dress up. Stand out. Discover a costume for every celebration.</p></div>
+ <div><strong>Contact</strong><p>Phone: <a href="tel:+919820734011">9820734011</a><br>Itrend-Homes, Hinjewadi Phase 2,<br>Pune 411057</p><a href="#categories">Browse categories</a> · <a href="#services">Rent or buy</a></div></div>
+ <div class="foot-bottom">© <span id="year"></span> CostumeCraze. All rights reserved.</div>
+</div></footer>
+<a class="float-wa" href="https://wa.me/919820734011?text=Hello%20CostumeCraze!%20I%20would%20like%20to%20enquire." aria-label="Contact CostumeCraze on WhatsApp">◉ WhatsApp</a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
